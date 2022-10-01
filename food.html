@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" name="image" href="form/image&icon/upi-icon.png">
+    <title>Online Dish</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            
+        }
+
+        header {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        h2{
+            font-family: serif;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(53, 238, 176, 0.936);
+            /* margin: 5px; */
+            padding: 5px;
+            /* background-image:url(https://i.pinimg.com/736x/3d/12/74/3d1274c1799149e924d54f709ad3cef0.jpg);
+            background-repeat: no-repeat; */
+           
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto;
+            margin: 10px;
+            
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid honeydew;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(219, 150, 150);
+            width: auto;
+        }
+
+        .card a {
+            background-color: rgb(244, 204, 152);
+            margin: -40px 0 0 auto;
+            padding: 2px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 100;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .card img{
+            margin: 5px;
+        }
+        .card img:hover{
+            transform: scale(1.1)
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .grid-container,
+            .card {
+                grid-template-columns: none;
+                /* flex-direction: row; */
+                margin:1px;
+                padding: 0px;
+            }
+
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <header><h1>Populer Dishes</h1></header>
+        <div class="grid-container">
+            <div class="card">
+                <img src="	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/2f3a74b06285575ab76bf4fb/1.jpg"
+                    width="auto" height="150px" alt="i1">
+                <h2> Tiramisu Cake</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <h3>&#8377 100.00</h3>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/ab84de2ad5735d628d59ed26/2.jpg"
+                    width="auto" height="150px" alt="i1">
+                <h2> Chia Pudding</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <h3>&#8377 150.00</h3>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="	https://images01.nicepage.com/c461c07a441a5d220e8feb1a/0af96baec95b56e6842e9bbd/4.jpg"
+                    width="auto" height="150px" alt="i1">
+                <h2> CheeseCake</h2>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <h3>&#8377 50.00</h3>
+                <a href="#">Buy Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</head>
+
+</html>
